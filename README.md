@@ -1,206 +1,114 @@
-\# Flask Login Brute-Force Lab
+# Flask Login Brute-Force Lab
 
+A beginner-friendly cybersecurity project demonstrating a local Flask login application and automated dictionary-based password testing using Python's `requests` library.
 
+## Features
 
-A beginner cybersecurity project demonstrating a local Flask login application and automated password-guessing tests using Python's `requests` library.
+- Local Flask web server
+- HTML login form
+- Basic username and password validation
+- HTTP POST request handling
+- Automated password testing against a predefined list
+- HTTP response status-code analysis
 
+## Technologies Used
 
+- Python
+- Flask
+- HTML and CSS
+- Requests
+- HTTP
 
-\## Features
-
-
-
-\- Local Flask web server
-
-\- HTML login form
-
-\- Username and password validation
-
-\- HTTP POST request handling
-
-\- Automated dictionary-based password testing
-
-\- HTTP response status-code analysis
-
-
-
-\## Technologies Used
-
-
-
-\- Python
-
-\- Flask
-
-\- HTML
-
-\- Requests
-
-\- HTTP
-
-
-
-\## Project Structure
-
-
+## Project Structure
 
 ```text
-
-flask-login-lab/
-
+flask-login-bruteforce-lab/
 ├── app.py
-
 ├── bruteforce.py
-
 ├── requirements.txt
-
 ├── README.md
-
 ├── .gitignore
-
 └── templates/
-
-&#x20;   └── login.html
-
+    └── login.html
 ```
 
+## Prerequisites
 
+- Python 3 installed
+- Git installed (for cloning the repository)
 
-\## Installation
+## Installation
 
-
-
-Clone the repository and enter the project directory:
-
-
+Clone the repository:
 
 ```bash
-
-git clone YOUR\_REPOSITORY\_URL
-
-cd flask-login-lab
-
+git clone https://github.com/mdwasifraza01/flask-login-bruteforce-lab-.git
+cd flask-login-bruteforce-lab-
 ```
 
-
-
-Install dependencies:
-
-
+Install the dependencies:
 
 ```bash
-
 python -m pip install -r requirements.txt
-
 ```
 
-
-
-\## Run the Application
-
-
+## Run the Application
 
 Start the Flask server:
 
-
-
 ```bash
-
 python app.py
-
 ```
 
+Open the following address in your browser:
 
+http://127.0.0.1:5000
 
-Open http://127.0.0.1:5000 in your browser.
+### Demo Credentials
 
+- **Username:** `admin`
+- **Password:** `secret123`
 
+These credentials are hardcoded for local educational testing only.
 
-Demo credentials:
+## Run the Password-Testing Script
 
-
-
-\- Username: `admin`
-
-\- Password: `secret123`
-
-
-
-These credentials are for local educational testing only.
-
-
-
-\## Run the Password-Testing Script
-
-
-
-Keep the Flask server running. Open another terminal and execute:
-
-
+Keep the Flask server running. Open a second terminal in the project directory and run:
 
 ```bash
-
 python bruteforce.py
-
 ```
 
+The script submits candidate passwords from a predefined list to the local login endpoint and checks the server's response to identify a successful login.
 
+## Learning Objectives
 
-The script submits candidate passwords from a predefined list and checks the server response.
+- Understand Flask routes and HTML forms
+- Learn HTTP GET and POST requests
+- Practice Python lists, dictionaries, loops, and conditional statements
+- Automate HTTP requests using the Requests library
+- Interpret HTTP status codes and server responses
+- Understand basic dictionary-based password guessing
 
+## Security Disclaimer
 
+This project is intended for educational purposes and authorized testing only.
 
-\## Learning Objectives
+- The application uses hardcoded credentials and is not suitable for production.
+- Run the password-testing script only against your own local application or systems for which you have explicit permission.
+- Keep the development server restricted to your local machine.
+- Do not use real passwords or reuse the demo credentials for personal accounts.
 
+## Future Improvements
 
+- Add login-attempt rate limiting
+- Implement secure password hashing
+- Add Flask session management
+- Improve authentication error handling
+- Add automated unit tests
 
-\- Understand Flask routes and HTML forms
+## Author
 
-\- Learn HTTP GET and POST requests
+**Md Wasif Raza**
 
-\- Use Python loops and dictionaries
-
-\- Automate requests using the Requests library
-
-\- Interpret HTTP status codes
-
-\- Understand basic password-guessing techniques
-
-
-
-\## Security Note
-
-
-
-This is an intentionally simple educational application. It uses hardcoded credentials and is not suitable for production.
-
-
-
-Run the testing script only against systems you own or have explicit permission to test. Keep the application bound to localhost during practice.
-
-
-
-\## Future Improvements
-
-
-
-\- Add login-attempt rate limiting
-
-\- Implement secure password hashing
-
-\- Add Flask session management
-
-\- Improve authentication error handling
-
-
-
-\## Author
-
-
-
-Md Wasif Raza
-
-
-
-Cybersecurity learner | Python | Web Security
-
+Cybersecurity Learner | Python | Web Security
